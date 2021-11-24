@@ -68,6 +68,5 @@ COPPELIASIMCSHARPAPI_API int GetObjectHandle(int id, const char* objectName) {
 }
 
 COPPELIASIMCSHARPAPI_API int SendInfo(int id, const char* message, bool blocking) {
-    int opMode = blocking ? simx_opmode_blocking : simx_opmode_oneshot;
-    return simxAddStatusbarMessage(id, message, opMode);
+    return simxAddStatusbarMessage(id, message, blocking ? simx_opmode_blocking : simx_opmode_oneshot);
 }
