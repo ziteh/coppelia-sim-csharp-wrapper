@@ -84,6 +84,9 @@
     <ClInclude Include="include\stack\stackString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CoppeliaSimCSharpAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -96,6 +99,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="remoteApi\extApiPlatform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoppeliaSimCSharpAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

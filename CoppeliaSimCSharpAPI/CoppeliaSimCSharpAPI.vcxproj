@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CoppeliaSimCSharpAPI.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="include\luaFunctionData.h" />
     <ClInclude Include="include\luaFunctionDataItem.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="remoteApi\extApiPlatform.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CoppeliaSimCSharpAPI.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
