@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "CoppeliaSimCSharpAPI.h"
 
-#define _USE_MATH_DEFINES // for C++ using <cmath>
+/* For C++ using <cmath>. */
+#define _USE_MATH_DEFINES
 #include <cmath>
 
 #define TO_RAD(degree) (degree*(M_PI/180))

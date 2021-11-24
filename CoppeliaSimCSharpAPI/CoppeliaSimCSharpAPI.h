@@ -7,7 +7,7 @@
 #endif
 
 extern "C" {
-#include "extApi.h" // remote api
+#include "extApi.h"
 }
 
 extern "C" COPPELIASIMCSHARPAPI_API int Connect(char* address, int port);
