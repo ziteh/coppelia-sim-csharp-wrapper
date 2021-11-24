@@ -152,7 +152,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="include\luaFunctionData.h" />
+    <ClInclude Include="include\luaFunctionDataItem.h" />
+    <ClInclude Include="include\scriptFunctionData.h" />
+    <ClInclude Include="include\scriptFunctionDataItem.h" />
+    <ClInclude Include="include\shared_memory.h" />
+    <ClInclude Include="include\simConst.h" />
+    <ClInclude Include="include\simLib.h" />
+    <ClInclude Include="include\simTypes.h" />
+    <ClInclude Include="include\socketInConnection.h" />
+    <ClInclude Include="include\socketOutConnection.h" />
+    <ClInclude Include="include\stack\stackArray.h" />
+    <ClInclude Include="include\stack\stackBool.h" />
+    <ClInclude Include="include\stack\stackMap.h" />
+    <ClInclude Include="include\stack\stackNull.h" />
+    <ClInclude Include="include\stack\stackNumber.h" />
+    <ClInclude Include="include\stack\stackObject.h" />
+    <ClInclude Include="include\stack\stackString.h" />
+    <ClInclude Include="include\_dirent.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="remoteApi\extApi.h" />
+    <ClInclude Include="remoteApi\extApiInternal.h" />
+    <ClInclude Include="remoteApi\extApiPlatform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
@@ -162,6 +183,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="remoteApi\extApi.c" />
+    <ClCompile Include="remoteApi\extApiPlatform.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
