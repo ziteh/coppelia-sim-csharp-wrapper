@@ -1,13 +1,6 @@
 #include "pch.h"
 #include "CoppeliaSimCSharpAPI.h"
 
-/* For C++ using <cmath>. */
-#define _USE_MATH_DEFINES
-#include <cmath>
-
-#define TO_RAD(degree) (degree*(M_PI/180))
-#define TO_DEGREE(rad) (rad*(180/M_PI))
-
 COPPELIASIMCSHARPAPI_API int Connect(char* address, int port) {
     int id = simxStart((char*)"127.0.0.1", port, true, true, 2000, 5);
     extApi_sleepMs(300);
