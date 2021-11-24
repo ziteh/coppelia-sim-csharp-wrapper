@@ -1,3 +1,6 @@
 [submodule "CoppeliaSimCSharpAPI/remoteApi"]
 	path = CoppeliaSimCSharpAPI/remoteApi
 	url = https://github.com/CoppeliaRobotics/remoteApi.git
+[submodule "CoppeliaSimCSharpAPI/include"]
+	path = CoppeliaSimCSharpAPI/include
+	url = https://github.com/CoppeliaRobotics/include.git
