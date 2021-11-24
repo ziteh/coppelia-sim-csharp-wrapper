@@ -3,15 +3,24 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     string command = "";
 
     cout << "CoppeliaSim C# API Test Console\n\n";
-    while (true)
-    {
+    while (true) {
         cin >> command;
-        cout << "Get " << command << "\n";
+        if (command == COMMAND_CONNECT) {
+
+        }
+        else if (command == COMMAND_DISCONNECT) {
+
+        }
+        else if (command == COMMAND_EXIT) {
+            break;
+        }
+        else {
+
+        }
     }
     return 0;
 }
