@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CoppeliaSimCSharpAPI\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,11 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoppeliaSimCSharpAPI.TestConsole.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CoppeliaSimCSharpAPI\CoppeliaSimCSharpAPI.vcxproj">
-      <Project>{6735f97b-5b21-4b2a-a1a4-edffccd825ba}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
