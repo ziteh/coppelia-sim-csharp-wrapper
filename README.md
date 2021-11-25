@@ -17,7 +17,7 @@ The CoppeliaSim (V-REP) remote control API for C#. Using [CoppeliaSim Legacy rem
 
 ### Server Side (i.e. CoppeliaSim)
 
-1. Add [`simRemoteApi.start()`](https://www.coppeliarobotics.com/helpFiles/en/remoteApiServerSide.htm) into your CoppeliaSim Lua script. For example:
+1. Add [`simRemoteApi.start()`](https://www.coppeliarobotics.com/helpFiles/en/remoteApiServerSide.htm) into your CoppeliaSim Lua script. For [example](/coppeliasim_ur5_script.lua):
 ```lua
 function sysCall_init()
     simRemoteApi.start(3000) -- Start remote API server on port 3000
