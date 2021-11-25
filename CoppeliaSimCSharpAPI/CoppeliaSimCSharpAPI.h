@@ -17,7 +17,7 @@ extern "C" {
 #define TO_RAD(degree) (degree*(M_PI/180))
 #define TO_DEGREE(rad) (rad*(180/M_PI))
 
-extern "C" COPPELIASIMCSHARPAPI_API int Connect(char* address, int port);
+extern "C" COPPELIASIMCSHARPAPI_API int Connect(const char* address, int port);
 extern "C" COPPELIASIMCSHARPAPI_API int Disconnect(int id);
 extern "C" COPPELIASIMCSHARPAPI_API bool IsConnected(int id);
 

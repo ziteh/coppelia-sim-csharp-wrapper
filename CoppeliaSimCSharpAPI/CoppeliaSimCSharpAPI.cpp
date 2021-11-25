@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CoppeliaSimCSharpAPI.h"
 
-COPPELIASIMCSHARPAPI_API int Connect(char* address, int port) {
+COPPELIASIMCSHARPAPI_API int Connect(const char* address, int port) {
     int id = simxStart((char*)"127.0.0.1", port, true, true, 2000, 5);
     extApi_sleepMs(300);
     if (IsConnected(id)) {
