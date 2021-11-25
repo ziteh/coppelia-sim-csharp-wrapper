@@ -18,6 +18,6 @@ namespace CoppeliaSimCSharpAPI.TestForm
         public static extern int GetObjectHandle(int id, string objectName);
 
         [DllImport("CoppeliaSimCSharpAPI.dll")]
-        public static extern int MoveJoint(int id, float[] position, int[] jointHandle, bool inTorqueForceMode);
+        public static extern int MoveJoint(int id, int[] jointHandle, float[] position, bool inTorqueForceMode);
     }
 }

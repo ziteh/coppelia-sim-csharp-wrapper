@@ -21,7 +21,7 @@ extern "C" COPPELIASIMCSHARPAPI_API int Connect(const char* address, int port);
 extern "C" COPPELIASIMCSHARPAPI_API int Disconnect(int id);
 extern "C" COPPELIASIMCSHARPAPI_API bool IsConnected(int id);
 
-extern "C" COPPELIASIMCSHARPAPI_API int MoveJoint(int id, float position[6], int jointHandle[6], bool inTorqueForceMode);
+extern "C" COPPELIASIMCSHARPAPI_API int MoveJoint(int id, int jointHandle[6], float position[6], bool inTorqueForceMode);
 
 extern "C" COPPELIASIMCSHARPAPI_API int GetJointPosition(int id, int jointHandle[6], float position[6]);
 

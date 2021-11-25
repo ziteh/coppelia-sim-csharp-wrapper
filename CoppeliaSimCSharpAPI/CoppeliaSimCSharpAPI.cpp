@@ -29,7 +29,7 @@ COPPELIASIMCSHARPAPI_API bool IsConnected(int id) {
     return isConnected;
 }
 
-COPPELIASIMCSHARPAPI_API int MoveJoint(int id, float position[6], int jointHandle[6], bool inTorqueForceMode) {
+COPPELIASIMCSHARPAPI_API int MoveJoint(int id, int jointHandle[6], float position[6], bool inTorqueForceMode) {
     simxPauseCommunication(id, 1);
     if (inTorqueForceMode) {
         for (int i = 0; i < 6; i++) {
