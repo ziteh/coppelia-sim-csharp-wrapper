@@ -29,23 +29,23 @@ COPPELIASIMCSHARPAPI_API bool IsConnected(int id) {
     return isConnected;
 }
 
-COPPELIASIMCSHARPAPI_API int MoveJoint(int id, int jointHandle[6], float position[6], bool inTorqueForceMode) {
+COPPELIASIMCSHARPAPI_API int MoveJoint(int id, int jointHandle[], float position[], bool inTorqueForceMode, int jointCount) {
     simxPauseCommunication(id, 1);
     if (inTorqueForceMode) {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < jointCount; i++) {
             simxSetJointTargetPosition(id, jointHandle[i], TO_RAD(position[i]), simx_opmode_oneshot);
         }
     }
     else {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < jointCount; i++) {
             simxSetJointPosition(id, jointHandle[i], TO_RAD(position[i]), simx_opmode_oneshot);
         }
     }
     return simxPauseCommunication(id, 0);
 }
 
-COPPELIASIMCSHARPAPI_API int GetJointPosition(int id, int jointHandle[6], float position[6]) {
-    for (int i = 0; i < 6; i++) {
+COPPELIASIMCSHARPAPI_API int GetJointPosition(int id, int jointHandle[], float position[], int jointCount) {
+    for (int i = 0; i < jointCount; i++) {
         float pos;
         simxGetJointPosition(id, jointHandle[i], &pos, simx_opmode_blocking);
         position[i] = TO_DEGREE(pos);

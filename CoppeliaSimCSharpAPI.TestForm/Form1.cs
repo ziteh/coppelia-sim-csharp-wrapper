@@ -45,19 +45,20 @@ namespace CoppeliaSimCSharpAPI.TestForm
                 (float)numericUpDownJ5.Value,
                 (float)numericUpDownJ6.Value
             };
-            Api.MoveJoint(_id, _jointHandle, position, true);
+            Api.MoveJoint(_id, _jointHandle, position, true, _jointHandle.Length);
         }
 
         private void buttonGetPosition_Click(object sender, EventArgs e)
         {
             var position = new float[6];
-            Api.GetJointPosition(_id, _jointHandle, position);
-            MessageBox.Show($"{position[0]}, " +
-                            $"{position[1]}, " +
-                            $"{position[2]}, " +
-                            $"{position[3]}, " +
-                            $"{position[4]}, " +
-                            $"{position[5]}");
+            Api.GetJointPosition(_id, _jointHandle, position, _jointHandle.Length);
+            MessageBox.Show($"{position[0]}\r\n" +
+                            $"{position[1]}\r\n" +
+                            $"{position[2]}\r\n" +
+                            $"{position[3]}\r\n" +
+                            $"{position[4]}\r\n" +
+                            $"{position[5]}",
+                            "Now position");
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
