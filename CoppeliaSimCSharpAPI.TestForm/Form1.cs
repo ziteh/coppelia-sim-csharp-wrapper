@@ -33,5 +33,19 @@ namespace CoppeliaSimCSharpAPI.TestForm
         {
             Api.Disconnect(_id);
         }
+
+        private void buttonMove_Click(object sender, EventArgs e)
+        {
+            var position = new float[]
+            {
+                (float)numericUpDownJ1.Value,
+                (float)numericUpDownJ2.Value,
+                (float)numericUpDownJ3.Value,
+                (float)numericUpDownJ4.Value,
+                (float)numericUpDownJ5.Value,
+                (float)numericUpDownJ6.Value
+            };
+            Api.MoveJoint(_id, _jointHandle, position, true);
+        }
     }
 }
