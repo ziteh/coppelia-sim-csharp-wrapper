@@ -4,7 +4,7 @@ The CoppeliaSim (V-REP) remote control API for C#. Using [CoppeliaSim Legacy rem
 
 ## Demo
 
-[Demo video (YouTube)](https://youtu.be/4fqbw-M2QbY)
+[Demo video (YouTube)](https://youtu.be/ouNCwvsmBSY)
 
 ## Usage
 
