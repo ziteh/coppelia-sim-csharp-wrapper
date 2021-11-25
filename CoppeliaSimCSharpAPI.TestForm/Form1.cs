@@ -47,5 +47,17 @@ namespace CoppeliaSimCSharpAPI.TestForm
             };
             Api.MoveJoint(_id, _jointHandle, position, true);
         }
+
+        private void buttonGetPosition_Click(object sender, EventArgs e)
+        {
+            var position = new float[6];
+            Api.GetJointPosition(_id, _jointHandle, position);
+            MessageBox.Show($"{position[0]}, " +
+                            $"{position[1]}, " +
+                            $"{position[2]}, " +
+                            $"{position[3]}, " +
+                            $"{position[4]}, " +
+                            $"{position[5]}");
+        }
     }
 }

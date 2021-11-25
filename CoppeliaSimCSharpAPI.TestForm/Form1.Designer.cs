@@ -39,6 +39,7 @@
             this.numericUpDownJ4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownJ5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownJ6 = new System.Windows.Forms.NumericUpDown();
+            this.buttonGetPosition = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJ1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJ2)).BeginInit();
@@ -205,11 +206,22 @@
             0,
             0});
             // 
+            // buttonGetPosition
+            // 
+            this.buttonGetPosition.Location = new System.Drawing.Point(592, 484);
+            this.buttonGetPosition.Name = "buttonGetPosition";
+            this.buttonGetPosition.Size = new System.Drawing.Size(159, 73);
+            this.buttonGetPosition.TabIndex = 5;
+            this.buttonGetPosition.Text = "Get Position";
+            this.buttonGetPosition.UseVisualStyleBackColor = true;
+            this.buttonGetPosition.Click += new System.EventHandler(this.buttonGetPosition_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1270, 626);
+            this.Controls.Add(this.buttonGetPosition);
             this.Controls.Add(this.numericUpDownJ6);
             this.Controls.Add(this.numericUpDownJ5);
             this.Controls.Add(this.numericUpDownJ4);
@@ -248,6 +260,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownJ4;
         private System.Windows.Forms.NumericUpDown numericUpDownJ5;
         private System.Windows.Forms.NumericUpDown numericUpDownJ6;
+        private System.Windows.Forms.Button buttonGetPosition;
     }
 }
 
