@@ -12,7 +12,7 @@ The CoppeliaSim (V-REP) remote control API for C#. Using [CoppeliaSim Legacy rem
 
 1. Download the DLL file from [Releases](https://github.com/ziteh/coppelia-sim-csharp-api/releases). You can also build it from [source code](/CoppeliaSimCSharpAPI/CoppeliaSimCSharpAPI.cpp).
 2. Copy and paste DLL file into your runtime path, e.g. `$(ProjectDir)x64/Debug/`.
-3. Add `using System.Runtime.InteropServices;` at the beginning of code, And use [`[DllImport()]`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.dllimportattribute?view=net-6.0) attribute to import DLL functions. [Example](/CoppeliaSimCSharpAPI.TestForm/Api.cs).
+3. Add `using System.Runtime.InteropServices;` at the beginning of code, use [`[DllImport()]`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.dllimportattribute?view=net-6.0) attribute to import DLL functions. [Example](/CoppeliaSimCSharpAPI.TestForm/Api.cs).
 4. Write your own code. [Example](/CoppeliaSimCSharpAPI.TestForm/Form1.cs).
 
 ### Server Side (i.e. CoppeliaSim)
