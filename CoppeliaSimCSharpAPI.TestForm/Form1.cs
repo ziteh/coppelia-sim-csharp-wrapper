@@ -59,5 +59,17 @@ namespace CoppeliaSimCSharpAPI.TestForm
                             $"{position[4]}, " +
                             $"{position[5]}");
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                buttonDisconnect.PerformClick();
+            }
+            catch (Exception)
+            {
+                /* Do nothing. */
+            }
+        }
     }
 }

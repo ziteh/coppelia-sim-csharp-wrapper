@@ -265,6 +265,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "CoppeliaSim C# API Test Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJ1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJ2)).EndInit();
