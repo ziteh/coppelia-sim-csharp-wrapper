@@ -12,6 +12,8 @@ namespace CoppeliaSimCSharpAPI.TestForm
 {
     public partial class Form1 : Form
     {
+        private const string _jointPrefix = "UR5_joint";
+
         private int _id;
         private int[] _jointHandle = new int[6];
 
@@ -27,7 +29,7 @@ namespace CoppeliaSimCSharpAPI.TestForm
             {
                 for (int i = 0; i < _jointHandle.Length; i++)
                 {
-                    _jointHandle[i] = Api.GetObjectHandle(_id, $"UR5_joint{i + 1}");
+                    _jointHandle[i] = Api.GetObjectHandle(_id, _jointPrefix + (i + 1));
                 }
             }
         }
