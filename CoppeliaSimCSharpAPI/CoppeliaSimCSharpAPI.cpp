@@ -44,10 +44,6 @@ COPPELIASIMCSHARPAPI_API int MoveJoint(int id, float position[6], int jointHandl
     return simxPauseCommunication(id, 0);
 }
 
-COPPELIASIMCSHARPAPI_API int MoveCartesian(int id, float position[6], int jointHandle[6], bool inTorqueForceMode) {
-    return -99;
-}
-
 COPPELIASIMCSHARPAPI_API int GetJointPosition(int id, int jointHandle[6], float position[6]) {
     for (int i = 0; i < 6; i++) {
         float pos;
@@ -55,10 +51,6 @@ COPPELIASIMCSHARPAPI_API int GetJointPosition(int id, int jointHandle[6], float 
         position[i] = TO_DEGREE(pos);
     }
     return 0;
-}
-
-COPPELIASIMCSHARPAPI_API int GetCartesianPosition(int id, int jointHandle[6], float position[6]) {
-    return -99;
 }
 
 COPPELIASIMCSHARPAPI_API int GetObjectHandle(int id, const char* objectName) {
