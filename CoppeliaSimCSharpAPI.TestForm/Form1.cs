@@ -23,9 +23,12 @@ namespace CoppeliaSimCSharpAPI.TestForm
         private void buttonConnect_Click(object sender, EventArgs e)
         {
             _id = Api.Connect(textBoxAddress.Text, (int)numericUpDownPort.Value);
-            for (int i = 0; i < _jointHandle.Length; i++)
+            if (Api.IsConnected(_id))
             {
-                _jointHandle[i] = Api.GetObjectHandle(_id, $"UR5_joint{i + 1}");
+                for (int i = 0; i < _jointHandle.Length; i++)
+                {
+                    _jointHandle[i] = Api.GetObjectHandle(_id, $"UR5_joint{i + 1}");
+                }
             }
         }
 

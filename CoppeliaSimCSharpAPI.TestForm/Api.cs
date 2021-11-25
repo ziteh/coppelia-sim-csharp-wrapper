@@ -12,6 +12,9 @@ namespace CoppeliaSimCSharpAPI.TestForm
         public static extern int Disconnect(int id);
 
         [DllImport("CoppeliaSimCSharpAPI.dll")]
+        public static extern bool IsConnected(int id);
+
+        [DllImport("CoppeliaSimCSharpAPI.dll")]
         public static extern int GetJointPosition(int id, int[] jointHandle, float[] position, int jointCount);
 
         [DllImport("CoppeliaSimCSharpAPI.dll")]
@@ -19,5 +22,8 @@ namespace CoppeliaSimCSharpAPI.TestForm
 
         [DllImport("CoppeliaSimCSharpAPI.dll")]
         public static extern int MoveJoint(int id, int[] jointHandle, float[] position, bool inTorqueForceMode, int jointCount);
+
+        [DllImport("CoppeliaSimCSharpAPI.dll")]
+        public static extern int SendInfo(int id, string message, bool blocking);
     }
 }
