@@ -1,6 +1,6 @@
-# CoppeliaSim C# API
+# CoppeliaSim C# Wrapper
 
-The CoppeliaSim (V-REP) remote control API for C#. Using [CoppeliaSim Legacy remote API](https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm).
+The CoppeliaSim (V-REP) remote control API wrapper for C#, based on [CoppeliaSim Legacy remote API](https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm).
 
 ## Demo
 
